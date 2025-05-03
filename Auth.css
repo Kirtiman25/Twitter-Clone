@@ -1,0 +1,100 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.auth__logo {
+  margin-bottom: 20px;
+}
+
+.auth__logo svg {
+  width: 50px;
+  height: 50px;
+}
+
+.auth h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.auth__error {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.auth__form {
+  width: 100%;
+}
+
+.auth__formGroup {
+  margin-bottom: 15px;
+}
+
+.auth__formGroup input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth__formGroup input:focus {
+  outline: none;
+  border-color: var(--twitter-color);
+}
+
+.auth__button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--twitter-color);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth__button:hover {
+  background-color: #1a91da;
+}
+
+.auth__button:disabled {
+  background-color: #9bd1f9;
+  cursor: not-allowed;
+}
+
+.auth__switch {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.auth__switch span {
+  margin-right: 5px;
+  color: #657786;
+}
+
+.auth__switch button {
+  background: none;
+  border: none;
+  color: var(--twitter-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth__switch button:hover {
+  text-decoration: underline;
+}

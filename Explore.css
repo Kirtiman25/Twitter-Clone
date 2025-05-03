@@ -1,0 +1,124 @@
+.explore {
+  flex: 0.4;
+  border-right: 1px solid var(--twitter-background);
+  min-width: 0;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.explore::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.explore {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.explore__header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border-bottom: 1px solid var(--twitter-background);
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.explore__header > h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.explore__searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.explore__searchIcon {
+  color: gray;
+  margin-right: 10px;
+}
+
+.explore__searchInput {
+  border: none;
+  background-color: var(--twitter-background);
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+.explore__trending {
+  border-bottom: 10px solid var(--twitter-background);
+  padding: 15px 20px;
+}
+
+.explore__trending > h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.explore__trendingTopics {
+  display: flex;
+  flex-direction: column;
+}
+
+.explore__trendingTopic {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--twitter-background);
+  cursor: pointer;
+}
+
+.explore__trendingTopic:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.explore__trendingCategory {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.explore__trendingName {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.explore__trendingTweets {
+  font-size: 13px;
+  color: gray;
+}
+
+.explore__trendingTweets > h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 15px 20px;
+}
+
+.explore__searchResults {
+  padding: 15px 20px;
+}
+
+.explore__searchResults > h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.explore__noResults {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: gray;
+  font-size: 16px;
+}
